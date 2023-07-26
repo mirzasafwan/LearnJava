@@ -1,4 +1,3 @@
-package Variables;
 
 public class AddData {
     static int addData() {
