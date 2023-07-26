@@ -1,0 +1,7 @@
+Compile Time 
+-> Syntax Verification
+-> Source code to ByteCode
+-> .class File Created where ByteCode is Stored
+
+Runtime 
+-> Memory allocation
