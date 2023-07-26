@@ -1,3 +1,4 @@
+package Variables;
 
 class Mirza {
 	int c = 1; // Instance Variable

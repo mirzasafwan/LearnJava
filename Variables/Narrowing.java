@@ -1,3 +1,4 @@
+package Variables;
 
 public class Narrowing {
     public static void main(String[] args) {
