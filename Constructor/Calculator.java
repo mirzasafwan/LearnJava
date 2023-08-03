@@ -1,11 +1,11 @@
 public class Calculator {
 
-    int insA;
-    int insB;
+    int a;
+    int b;
 
     Calculator(int a, int b) {
-        this.insA = a;
-        this.insB = b;
+        this.a = a;
+        this.b = b;
         add();
         mul();
         System.out.println(div());
@@ -13,19 +13,19 @@ public class Calculator {
     }
 
     void add() {
-        System.out.println(insA + insB);
+        System.out.println(a + b);
     }
 
     int sub() {
-        return insA - insB;
+        return a - b;
     }
 
     int div() {
-        return insA / insB;
+        return a / b;
     }
 
     void mul() {
-        System.out.println(insA * insB);
+        System.out.println(a * b);
     }
 
     public static void main(String[] args) {
