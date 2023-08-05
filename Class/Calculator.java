@@ -25,31 +25,31 @@
 // }
 // }
 
-class Calculator {
-    int a = m1();
-    static int b = m2();
-    {
-        System.out.println("Instance Initialize Block");//
-    }
-    static {
-        System.out.println("Static block");//
-    }
+// class Calculator {
+// int a = m1();
+// static int b = m2();
+// {
+// System.out.println("Instance Initialize Block");//
+// }
+// static {
+// System.out.println("Static block");//
+// }
 
-    int m1() {
-        System.out.println("Non Static Method");//
-        return 1;
-    }
+// int m1() {
+// System.out.println("Non Static Method");//
+// return 1;
+// }
 
-    static int m2() {
-        System.out.println("Static Method");//
-        return 1;
-    }
+// static int m2() {
+// System.out.println("Static Method");//
+// return 1;
+// }
 
-    public static void main(String[] args) {
-        Calculator obj = new Calculator();
+// public static void main(String[] args) {
+// Calculator obj = new Calculator();
 
-    }
-}
+// }
+// }
 
 // class Calculator {
 // int id;
@@ -65,5 +65,39 @@ class Calculator {
 
 // public static void main(String[] args) {
 // Calculator a = new Calculator(10, 2);
+// }
+// }
+
+// class Calculator {
+// public static void pushZero(
+// int[] arr,
+// int left, int right) {
+// while (left < right) {
+// if (arr[left] == 0) {
+// if (arr[right] != 0) {
+// // Swap
+// int t = arr[left];
+// arr[left] = arr[right];
+// arr[right] = t;
+// } else {
+// right = right - 1;
+// }
+
+// } else {
+// left = left + 1;
+// }
+
+// }
+// System.out.println(arr.hashCode());
+// }
+
+// public static void main(String[] args) {
+// int[] arr = { 10, 0, 2, 0, 3, 1, 5, 6, 8, 0, 1, 21 };
+// // String name = "shaikh";
+// // int len = name.length();
+// int left = 0;
+// int right = arr.length - 1;
+// pushZero(arr, left, right);
+
 // }
 // }
