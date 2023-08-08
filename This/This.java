@@ -61,17 +61,37 @@
 // }
 // }
 
-class This {
-    This aget(This obj) {
-        return this;
-    }
+// class This {
+// This aget(This obj) {
+// return this;
+// }
 
-    void msg() {
-        System.out.println("Hello java " + this);
-    }
+// void msg() {
+// System.out.println("Hello java " + this);
+// }
 
-    public static void main(String[] args) {
-        This t = new This();
-        t.msg();
-    }
-}
+// public static void main(String[] args) {
+// This t = new This();
+// t.msg();
+// }
+// }
+// class This {
+// public static void main(String[] args) {
+// int n = 10;
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= n; j++) {
+// if (j == 1 && i == 1 || j == 1 && i == n || j == n && i == 1 || j == n && i
+// == n) {
+// System.out.print(" #");
+// } else if (i == 1 || j == 1 || i == n || j == n) {
+// System.out.print(" ");
+// } else {
+// System.out.print(" *");
+// }
+// }
+
+// System.out.println();
+// }
+
+// }
+// }
