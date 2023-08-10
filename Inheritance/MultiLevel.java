@@ -1,19 +1,34 @@
 
 class Animal {
+    int a = 10;
+
     Animal() {
-        System.out.println("Animal is parent of Dog and Cat");
+        System.out.println("Constructor Animal " + this.a);
+    }
+
+    void showAnimal() {
+        System.out.println("Method Animal " + this.a);
     }
 }
 
 class Dog extends Animal {
+
     Dog() {
-        System.out.println("Dog is Child of Animal");
+        System.out.println("Constructor Dog " + this.a);
+    }
+
+    void showDog() {
+        System.out.println("Method Dog " + this.a);
     }
 }
 
 class Cat extends Dog {
     Cat() {
-        System.out.println("Cat is Child of Animal");
+        System.out.println("Constructor Cat " + this.a);
+    }
+
+    void showCat() {
+        System.out.println("Method Cat " + this.a);
     }
 
 }
@@ -21,8 +36,11 @@ class Cat extends Dog {
 public class MultiLevel {
 
     public static void main(String[] args) {
-        Animal d = new Dog();
-        Animal c = new Cat();
+
+        Cat c = new Cat();
+        c.showAnimal();
+        c.showDog();
+        c.showCat();
 
     }
 }
