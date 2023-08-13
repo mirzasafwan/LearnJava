@@ -75,23 +75,124 @@
 // t.msg();
 // }
 // }
-// class This {
-// public static void main(String[] args) {
-// int n = 10;
-// for (int i = 1; i <= n; i++) {
-// for (int j = 1; j <= n; j++) {
-// if (j == 1 && i == 1 || j == 1 && i == n || j == n && i == 1 || j == n && i
-// == n) {
-// System.out.print(" #");
-// } else if (i == 1 || j == 1 || i == n || j == n) {
+
+// Scanner s = new Scanner(System.in);
+// System.out.println("Enter the value of n ");
+// int n = s.nextInt();
+
+// for (int i = n * 2 / 2 - 2; i <= n; i++) {
+// for (int j = 1; j <= n - i; j++) {
 // System.out.print(" ");
-// } else {
+// }
+// for (int j = 1; j <= i; j++) {
 // System.out.print(" *");
+// }
+// System.out.println();
+// }
+
+// for (int i = 1; i < 5; i++) {
+// for (int j = 1; j <= i; j++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+// for (int i = 1; i < 5; i++) {
+// for (int j = 1; j <= i; j++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+// for (int i = n; i >= 0; i--) {
+// for (int j = 1; j <= n - i; j++) {
+// System.out.print(" ");
+// }
+// for (int j = 0; j <= 2 * i; j++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= n - i + 1; j++) {
+// System.out.print(" ");
+// }
+// for (int j = 1; j <= i; j++) {
+// if (j == 1 || i == j || i == n / 2 + 2) {
+// System.out.print(" *");
+// } else {
+// System.out.print(" ");
 // }
 // }
 
 // System.out.println();
 // }
-
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= i; j++) {
+// System.out.print(" ");
 // }
+// for (int j = 1; j <= n - i + 1; j++) {
+// if (j == 1 || j == n - i + 1 || i == n / 2 + 1 || i == 1) {
+// System.out.print(" *");
+// } else {
+// System.out.print(" ");
+// }
+// }
+
+// System.out.println();
+// }
+// }
+
+// Swastik
+// if (n % 2 == 1) {
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= n; j++) {
+
+// if (i == n / 2 + 1 || j == n / 2 + 1) {
+// System.out.print(" *");
+// } else if (i == n / 4 + 1 && j == n / 4 + 1
+// || i == n / 4 + 1 && j == n - i + 1
+// || i == n - j + 1 && j == n / 4 + 1
+// || i == 7 && j == 7) {
+// System.out.print(" *");
+// } else {
+// System.out.print(" ");
+// }
+// }
+// System.out.println();
+// }
+
+// } else {
+// System.out.println("Even bber Not supported");
+// }
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= n - i + 1; j++) {
+// System.out.print(" *");
+// }
+// for (int j = n - i + 1; j < n; j++) {
+// System.out.print(" ");
+// }
+// for (int j = 1; j < i; j++) {
+// System.out.print(" ");
+// }
+// for (int j = i; j <= n; j++) {
+// System.out.print(" *");
+// }
+
+// System.out.println();
+// }
+// for (int i = 1; i <= n; i++) {
+// for (int j = 1; j <= i; j++) {
+// System.out.print(" *");
+// }
+// for (int j = i; j < n; j++) {
+// System.out.print(" ");
+// }
+// for (int j = i; j < n; j++) {
+// System.out.print(" ");
+// }
+// for (int j = 1; j <= i; j++) {
+// System.out.print(" *");
+// }
+
+// System.out.println();
 // }
