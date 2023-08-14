@@ -90,14 +90,14 @@ class revAndDef {
                 if (i == 1 || j == 1 || j <= n - i + 1) {
                     System.out.print(" *");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             for (int j = 1; j <= n; j++) {
                 if (i == 1 || j == n || j >= i) {
                     System.out.print(" *");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();
@@ -107,14 +107,14 @@ class revAndDef {
                 if (i == n || j == 1 || j <= i) {
                     System.out.print(" *");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             for (int j = 1; j <= n; j++) {
                 if (i == n || j == n || j >= n - i + 1) {
                     System.out.print(" *");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();
