@@ -1,1 +1,1 @@
-int
+            System.out.print(" " + character);

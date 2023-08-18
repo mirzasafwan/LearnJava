@@ -18,25 +18,25 @@ public class specialPattern {
                 // }
 
                 // Fan Pattern
-                // if (i <= (n / 2) + 1 && j <= (n / 2) + 1 && i >= j
-                // || i <= (n / 2) + 1 && j >= (n / 2) + 1 && j <= n - i + 1
-                // || i >= (n / 2) + 1 && j < (n / 2) + 1 && j >= n - i + 1
-                // || i >= (n / 2) + 1 && j >= (n / 2) + 1 && i <= j) {
+                if (i <= (n / 2) + 1 && j <= (n / 2) + 1 && i >= j
+                        || i <= (n / 2) + 1 && j >= (n / 2) + 1 && j <= n - i + 1
+                        || i >= (n / 2) + 1 && j < (n / 2) + 1 && j >= n - i + 1
+                        || i >= (n / 2) + 1 && j >= (n / 2) + 1 && i <= j) {
 
-                // System.out.print(" *");
-                // } else {
-                // System.out.print(" ");
-                // }
-
-                // right left pyramid
-                if (i >= (n / 2) + 1 && j < (n / 2) + 1 && j <= n - i + 1
-                        || i >= (n / 2) + 1 && j >= (n / 2) + 1 && i <= j
-                        || i <= (n / 2) + 1 && j >= (n / 2) + 1 && j >= n - i + 1
-                        || i <= (n / 2) + 1 && j <= (n / 2) + 1 && i >= j) {
                     System.out.print(" *");
                 } else {
                     System.out.print("  ");
                 }
+
+                // right left pyramid
+                // if (i >= (n / 2) + 1 && j < (n / 2) + 1 && j <= n - i + 1
+                // || i >= (n / 2) + 1 && j >= (n / 2) + 1 && i <= j
+                // || i <= (n / 2) + 1 && j >= (n / 2) + 1 && j >= n - i + 1
+                // || i <= (n / 2) + 1 && j <= (n / 2) + 1 && i >= j) {
+                // System.out.print(" *");
+                // } else {
+                // System.out.print(" ");
+                // }
             }
             System.out.println();
         }
