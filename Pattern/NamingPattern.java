@@ -8,9 +8,11 @@ public class NamingPattern {
         String[] a = s.split("");
 
         int n = 5; // Set the value of n
+        int m = (n + 1) / 2;
 
         // Iterate through each row of the pattern
         iLoop: for (int i = 1; i <= n; i++) {
+            int reverse = n - i + 1;
             for (String character : a) { // Iterate through each character of the name
                 switch (character.toUpperCase()) {
                     case "A":
@@ -18,7 +20,7 @@ public class NamingPattern {
                             System.out.print(" ");
                         }
                         for (int j = 1; j <= i; j++) {
-                            if (j == 1 || j >= i || i == (n / 2) + 1) {
+                            if (j == 1 || j >= i || i == m) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -32,7 +34,7 @@ public class NamingPattern {
                         break;
                     case "B":
                         for (int j = 1; j <= n; j++) {
-                            if (i == 1 && j <= n - 1 || i == (n + 1) / 2 && j <= n - 1 || j <= n - 1 && i == n || j == 1
+                            if (i == 1 && j <= n - 1 || i == m && j <= n - 1 || j <= n - 1 && i == n || j == 1
                                     || j == n && i % 2 == 0) {
                                 System.out.print(" *");
                             } else {
@@ -62,7 +64,7 @@ public class NamingPattern {
                         break;
                     case "E":
                         for (int j = 1; j <= n; j++) {
-                            if (j == 1 || i == 1 || i == n || i == (n / 2) + 1) {
+                            if (j == 1 || i == 1 || i == n || i == m) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -71,7 +73,7 @@ public class NamingPattern {
                         break;
                     case "F":
                         for (int j = 1; j <= n; j++) {
-                            if (j == 1 || i == 1 || i == (n / 2) + 1) {
+                            if (j == 1 || i == 1 || i == m) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -83,7 +85,7 @@ public class NamingPattern {
                     // H
                     case "H":
                         for (int j = 1; j <= n; j++) {
-                            if (j == 1 || j == n || i == (n / 2) + 1) {
+                            if (j == 1 || j == n || i == m) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -94,7 +96,7 @@ public class NamingPattern {
                     // I
                     case "I":
                         for (int j = 1; j <= n; j++) {
-                            if (i == 1 || i == n || j == (n / 2) + 1) {
+                            if (i == 1 || i == n || j == m) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -104,7 +106,16 @@ public class NamingPattern {
                     // J
 
                     // K
-
+                    case "K":
+                        for (int j = 1; j <= n; j++) {
+                            if (j == 1 || i == m && j <= (n) / 2 || i <= m && j == reverse
+                                    || i >= m && i == j) {
+                                System.out.print(" *");
+                            } else {
+                                System.out.print("  ");
+                            }
+                        }
+                        break;
                     // L
 
                     case "L":
@@ -119,8 +130,8 @@ public class NamingPattern {
                     // L
                     case "M":
                         for (int j = 1; j <= n; j++) {
-                            if (j == 1 || j == n || i <= (n + 1) / 2 && j == i
-                                    || j >= (n + 1) / 2 && j == n - i + 1) {
+                            if (j == 1 || j == n || i <= m && j == i
+                                    || j >= m && j == reverse) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -141,7 +152,7 @@ public class NamingPattern {
                     case "R":
                         for (int j = 1; j <= n; j++) {
                             if (i == 1 && j <= n - 1 || j == 1 || i == n / 2 + 1 && j <= n - 1
-                                    || i == j && i >= (n + 1) / 2 || i == 2 && j == n) {
+                                    || i == j && i >= m || i == 2 && j == n) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -151,7 +162,7 @@ public class NamingPattern {
 
                     case "S":
                         for (int j = 1; j <= n; j++) {
-                            if (j == 1 && i <= (n / 2) + 1 || i == 1 || i == (n / 2) + 1 || j == n && i > n / 2
+                            if (j == 1 && i <= m || i == 1 || i == m || j == n && i > n / 2
                                     || i == n) {
                                 System.out.print(" *");
                             } else {
@@ -162,7 +173,7 @@ public class NamingPattern {
                         break;
                     case "T":
                         for (int j = 1; j <= n; j++) {
-                            if (i == 1 || j == (n / 2) + 1) {
+                            if (i == 1 || j == m) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -172,8 +183,8 @@ public class NamingPattern {
 
                     case "W":
                         for (int j = 1; j <= n; j++) {
-                            if (j == 1 || j == n || i >= (n + 1) / 2 && j == n - i + 1
-                                    || i >= (n + 1) / 2 && j == i) {
+                            if (j == 1 || j == n || i >= m && j == reverse
+                                    || i >= m && j == i) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");
@@ -182,7 +193,7 @@ public class NamingPattern {
                         break;
                     case "Z":
                         for (int j = 1; j <= n; j++) {
-                            if (i == 1 || i == n || j == n - i + 1) {
+                            if (i == 1 || i == n || j == reverse) {
                                 System.out.print(" *");
                             } else {
                                 System.out.print("  ");

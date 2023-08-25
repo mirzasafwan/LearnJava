@@ -17,7 +17,11 @@ public class OneForPattern {
         int n = 5;
 
         for (int i = 1; i <= n * n; i++) {
-            System.out.print(" *");
+            if (i <= n || i <= n + 1) {
+                System.out.print(" *");
+            } else {
+                System.out.print("  ");
+            }
             if (i % n == 0) {
                 System.out.println();
             }
