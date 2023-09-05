@@ -1,19 +1,28 @@
-class Interface {
-    // class A {
-    // interface B {
-    // void m1();
-    // }
-    // }
+interface A {
+    int a = 1;
 
-    // class B extends A implements A.B {
-    // public void m1() {
-    // System.out.println("Class B Interface A");
-    // }
-    // }
+    void m1();
+}
+
+interface B {
+    int b = 2;
+
+    void m1();
+}
+
+public class Interface implements A, B {
+
+    @Override
+    public void m1() {
+        System.out.println(A.a);
+        System.out.println(B.b);
+        // TODO Auto-generated method stub
+
+    }
 
     public static void main(String[] args) {
-        int a = 69;
-        char b = (char) a;
-        System.out.println(b);
+        Interface a = new Interface();
+        a.m1();
     }
+
 }
