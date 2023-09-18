@@ -40,21 +40,38 @@
 // }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
+// class Test {
+
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+// String[] a = new String[5];
+// for (int i = 0; i < a.length; i++) {
+// System.out.println("Enter Name");
+// a[i] = sc.next();
+// }
+// for (String str : a) {
+// if (str.charAt(0) == 'b' || str.charAt(0) == 'B') {
+// System.out.println("The Letter starts with b is " + str);
+// }
+// }
+// }
+// }
 class Test {
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[] a = new String[5];
-        for (int i = 0; i < a.length; i++) {
-            System.out.println("Enter Name");
-            a[i] = sc.next();
+        int p = 34;
+        switch (p) {
+            case 1:
+                System.out.print("One");
+                break;
+            case 2:
+                System.out.print("Two");
+                break;
+            default:
+                System.out.print("Default");
+                break;
         }
-        for (String str : a) {
-            if (str.charAt(0) == 'b' || str.charAt(0) == 'B') {
-                System.out.println("The Letter starts with b is " + str);
-            }
-        }
+
     }
 }

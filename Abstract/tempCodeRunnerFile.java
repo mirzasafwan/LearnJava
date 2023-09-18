@@ -1,1 +1,1 @@
-        C c1 = new D();
+void
